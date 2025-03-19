@@ -119,10 +119,15 @@
         
         /* Hero section with animation */
         .hero {
-            padding: 150px 0 100px;
-            background: var(--primary-color);
+            padding: 0;  /* Remove padding */
+            height: 100vh;  /* Make it full viewport height */
+            display: flex;  /* Add flex display */
+            align-items: center;  /* Center content vertically */
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: var(--dark-color);
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
         
         .hero::before {
